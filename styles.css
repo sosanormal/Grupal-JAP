@@ -31,3 +31,11 @@
 .showMenu {
   transform: translateY(0);
 }
+
+
+
+.text{
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: 10px;
+}
