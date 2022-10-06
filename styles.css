@@ -1,3 +1,5 @@
+/* Todo esto que esta comentado es de una version anterior del menu */
+
 /*.hamburger {
   position: fixed;
   z-index: 100;
@@ -33,26 +35,31 @@
 }
 */
 
+
+/* Estilos para el menu de arriba */
+
 .menu li {
   display: inline;
   float: left;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
+  color: white;
 }
 
 .menu a {
   display: block;
-  padding: 8px;
-  background-color: #dddddd;
+  color: white;
+  padding-left: 30px;
 }
 
-
-.text{
-  background-color: antiquewhite;
-  padding: 10px;
-  margin: 10px;
+.menu a:hover {
+  color: rgb(247, 248, 221);
+  font-weight: 500;
+  text-decoration: none;
 }
+
+/* Hamburger es el boton de las 3 rayitas */
 
 .hamburger {
   display: none;
@@ -68,6 +75,35 @@
 }
 
 
+/*Estilo para el menu lateral de opciones*/
+
+.options_menu {
+  margin-left:auto;
+  margin-right:auto;
+  list-style-type: none;
+}
+
+.options_menu li{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5%;
+}
+.options_menu a{
+  color: black;
+}
+
+
+/*Estilo para las columnas de texto*/
+
+.text{
+  background-color: rgb(243, 243, 243);
+  padding: 10px;
+}
+
+
+
+/* Esto de @media es para que mientras la pantalla este menos de 1000px se utilizan estos estilos (desaparecen cosas, aparecen otras) */
 
 @media (max-width: 1000px) {
 

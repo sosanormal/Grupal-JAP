@@ -1,3 +1,5 @@
+/* Todo esto que esta comentado es de una version anterior del menu */
+
 /*
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
