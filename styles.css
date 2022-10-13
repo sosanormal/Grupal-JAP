@@ -130,3 +130,16 @@
   }
 
 }
+
+/*Carrusel*/
+.carousel {
+  max-width: 960px;
+  margin: auto;
+  width: 90%;
+}
+
+.carousel-control {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
