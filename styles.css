@@ -97,9 +97,12 @@
 /*Estilo para las columnas de texto*/
 
 .text{
+
   background-color: rgb(243, 243, 243);
   padding: 10px;
 }
+
+
 
 
 
@@ -143,3 +146,5 @@
   visibility: hidden;
   opacity: 0;
 }
+
+
