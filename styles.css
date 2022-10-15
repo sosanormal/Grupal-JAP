@@ -1,77 +1,11 @@
-/* Todo esto que esta comentado es de una version anterior del menu */
-
-/*.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
-}
-
-.closeIcon {
-  display: none;
-}
-
-.menu {
-  position: fixed;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background: black;
-  color: white;
-  list-style: none;
-  padding-top: 4rem;
-}
-
-.showMenu {
-  transform: translateY(0);
-}
-*/
-
-
 /* Estilos para el menu de arriba */
 
-.menu li {
-  display: inline;
-  float: left;
-  list-style-type: none;
-  margin: 5px;
-  padding: 5px;
-  color: white;
+main{
+  margin: auto;
+
 }
-
-.menu a {
-  display: block;
-  color: white;
-  padding-left: 30px;
-}
-
-.menu a:hover {
-  color: rgb(247, 248, 221);
-  font-weight: 500;
-  text-decoration: none;
-}
-
-/* Hamburger es el boton de las 3 rayitas */
-
-.hamburger {
-  display: none;
-  visibility: hidden;
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
+header{
+  margin: 50px;
 }
 
 
@@ -84,7 +18,6 @@
 }
 
 .options_menu li{
-  margin: 10px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5%;
@@ -93,46 +26,14 @@
   color: black;
 }
 
-
 /*Estilo para las columnas de texto*/
 
 .text{
-
+  margin-bottom: 15px;
   background-color: rgb(243, 243, 243);
-  padding: 10px;
+  padding: 20px;
 }
 
-
-
-
-
-/* Esto de @media es para que mientras la pantalla este menos de 1000px se utilizan estos estilos (desaparecen cosas, aparecen otras) */
-
-@media (max-width: 1000px) {
-
-  .options_menu {
-    display: none;
-    visibility: hidden;
-  }
-  .menu-item {
-    display: none;
-    visibility: hidden;
-  }
-
-  .hamburger {
-    display: block;
-    visibility: visible;
-    position: fixed;
-    z-index: 100;
-    top: 1rem;
-    right: 1rem;
-    padding: 4px;
-    border: black solid 1px;
-    background: white;
-    cursor: pointer;
-  }
-
-}
 
 /*Carrusel*/
 .carousel {
@@ -146,5 +47,3 @@
   visibility: hidden;
   opacity: 0;
 }
-
-
