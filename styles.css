@@ -1,5 +1,12 @@
 /* Estilos para el menu de arriba */
 
+.navbar a{
+  margin-right: 70px;
+}
+
+
+/* Estilos contenido y encabezado */
+
 main{
   margin: auto;
 
@@ -31,7 +38,8 @@ header{
 .text{
   margin-bottom: 15px;
   background-color: rgb(243, 243, 243);
-  padding: 20px;
+  padding:  10px 20px 10px 20px;
+  text-align: justify;
 }
 
 

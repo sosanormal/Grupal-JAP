@@ -18,10 +18,11 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LOREM IPSUM</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" style="border-width:4px;border-color:lightgray">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" style="border-width:4px;border-color:lightgray; border-radius: 10px;">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mynavbar">
+
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Dolor</a>
@@ -32,27 +33,21 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Amet</a>
           </li>
-          <li class="nav-item d-lg-none"><a  href="#options-menu" class="nav-link" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">Opciones</a></li>
+          <li class="nav-item d-lg-none"><a  href="#option-menu" class="nav-link" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">Opciones</a></li>
         </ul>
-        <form class="d-flex"><input class="form-control me-2" type="text" placeholder="Search"></form>
+        <form><input class="form-control me-2" type="text" placeholder="Search"></form>
+
       </div>
     </div>
   </nav>
 
-  <div class="collapse" id="options-menu">
-    <ul class="options_menu card card-body">
-      <li><a href="#">Opcion 1</a></li>
-      <li><a href="#">Opcion 2</a></li>
-      <li><a href="#">Opcion 3</a></li>
-      <li><a href="#">Opcion 4</a></li>
-    </ul>
-    </div>
+
 
 
 
   <!--Contenido-->
 
-  <main class="col-lg-10 col-md-9 col-sd-12">
+  <main class="col-lg-9 col-md-9 col-sd-12">
     <header class="text-center d-none d-sm-none d-lg-block">
       <h1>Loren Ipsum</h1>
 
@@ -74,7 +69,7 @@
 
     <div class="row">
       <!--MENU LATERAL OPCIONES -->
-      <ul class="options_menu col-lg-2 col-md-12 col-sd-8 d-none d-sm-none d-lg-block" id="option-menu">
+      <ul class="collapse options_menu col-lg-3 col-md-12 col-sd-8 d-lg-block" id="option-menu">
         <li><a href="#">Opcion 1</a></li>
         <li><a href="#">Opcion 2</a></li>
         <li><a href="#">Opcion 3</a></li>
