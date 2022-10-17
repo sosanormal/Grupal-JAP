@@ -21,9 +21,8 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" style="border-width:4px;border-color:lightgray; border-radius: 10px;">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="mynavbar">
-
-        <ul class="navbar-nav me-auto">
+      <div class="collapse navbar-collapse container-menu" id="mynavbar">
+        <ul class="navbar-nav me-auto options">
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Dolor</a>
           </li>
@@ -33,10 +32,13 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Amet</a>
           </li>
-          <li class="nav-item d-lg-none"><a  href="#option-menu" class="nav-link" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">Opciones</a></li>
+          <li class="nav-item d-lg-none">
+            <a  href="#option-menu" class="nav-link" data-bs-toggle="collapse"  role="button" aria-expanded="false" aria-controls="collapseExample">Opciones</a>
+          </li>
         </ul>
-        <form><input class="form-control me-2" type="text" placeholder="Search"></form>
-
+        <form class="form-search">
+          <input class="form-control me-2" type="text" placeholder="Search">
+        </form>
       </div>
     </div>
   </nav>

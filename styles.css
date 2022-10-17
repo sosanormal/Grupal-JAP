@@ -55,3 +55,9 @@ header{
   visibility: hidden;
   opacity: 0;
 }
+
+@media screen and (max-width: 992px) {
+  .container-menu { display:flex; flex-flow:column;}
+  .form-search { order: 1; width: 100%; }
+  .options { order: 2; }
+}
