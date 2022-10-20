@@ -14,44 +14,68 @@
 
   <div class="container">
     <main>
-      <form action="#" method="get" class="row mt-4">
+      <form action="#" method="get" class="row mt-4" id="formulario">
         <div class="col">
           <h1 class="mb-3">Registro</h1>
-          <hr class="my-4">
+          <hr class="my-4"> 
           <div class="row g-3">
             <div class="col-sm-6">
+              <div class="formulario__grupo" id="grupo__apel"></div>
               <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="nombre">
+              <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
+              <p class ="formulario__input-error">Debe ingresar un nombre</p>
             </div>
+            
 
             <div class="col-sm-6">
+              <div class="formulario__grupo" id="grupo__apellido">
               <label for="apellido" class="form-label">Apellido</label>
               <input type="text" class="form-control" id="apellido">
+              <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
             </div>
+              <p class ="formulario__input-error">Debe ingresar un apellido</p>
+            </div>
+            
 
             <div class="col-12">
+              <div class="formulario__grupo" id="grupo__mail">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email">
+              <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
+              </div>
+              <p class ="formulario__input-error">Debe ingresar un email</p>
             </div>
 
             <div class="col-sm-6">
+              <div class="formulario__grupo" id="grupo__password1">
               <label for="password1" class="form-label">Contraseña</label>
               <input type="password" class="form-control" id="password1">
+              <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
+            </div>
+              <p class ="formulario__input-error">Debe ingresar una contraseña con al menos 6 caracteres</p>
             </div>
 
             <div class="col-sm-6">
+              <div class="formulario__grupo" id="grupo__password2">
               <label for="password2" class="form-label">Repetir contraseña</label>
               <input type="password" class="form-control" id="password2">
+              <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
+            </div>
+              <p class ="formulario__input-error">Debe ser igual a "contraseña</p> 
             </div>
 
             <div class="col-sm-12">
+              <div class="formulario__grupo" id="grupo__terminos"></div>
               <button type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
-                data-bs-target="#modalTerminos">Términos del servicio</button>
+                data-bs-target="#modalTerminos" id="terminos">Términos del servicio</button>
+              </div>
+              <p class ="formulario__input-error">Debe aceptar los términos del servicio</p>
             </div>
 
-
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
             <button class="btn btn-primary" type="submit">Registrarme</button>
-
+          </div>
 
           </div>
         </div>

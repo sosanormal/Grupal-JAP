@@ -3,3 +3,5 @@ https://github.com/sosanormal/Grupal-JAP/
 https://sosanormal.github.io/Grupal-JAP/index.html
 
 https://prod.liveshare.vsengsaas.visualstudio.com/join?BDA601E609FF1386BEE27C84C22C312A74E1
+
+https://sosanormal.github.io/Grupal-JAP/index.html#
