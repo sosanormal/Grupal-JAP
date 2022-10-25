@@ -14,7 +14,7 @@
 
   <div class="container">
     <main>
-      <form action="#" method="get" class="row mt-4" id="formulario">
+      <form class="needs-validation" action="#" method="get" class="row mt-4" id="formulario" novalidate>
         <div class="col">
           <h1 class="mb-3">Registro</h1>
           <hr class="my-4"> 
@@ -22,7 +22,7 @@
             <div class="col-sm-6">
               <div class="formulario__grupo" id="grupo__apel"></div>
               <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre">
+              <input type="text" class="form-control" id="nombre" required>
               <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
               <p class ="formulario__input-error">Debe ingresar un nombre</p>
             </div>
@@ -31,7 +31,7 @@
             <div class="col-sm-6">
               <div class="formulario__grupo" id="grupo__apellido">
               <label for="apellido" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="apellido">
+              <input type="text" class="form-control" id="apellido" required>
               <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
             </div>
               <p class ="formulario__input-error">Debe ingresar un apellido</p>
@@ -41,7 +41,7 @@
             <div class="col-12">
               <div class="formulario__grupo" id="grupo__mail">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email">
+              <input type="email" class="form-control" id="email" required>
               <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
               </div>
               <p class ="formulario__input-error">Debe ingresar un email</p>
@@ -50,7 +50,7 @@
             <div class="col-sm-6">
               <div class="formulario__grupo" id="grupo__password1">
               <label for="password1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password1">
+              <input type="password" class="form-control" id="password1" required>
               <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
             </div>
               <p class ="formulario__input-error">Debe ingresar una contraseña con al menos 6 caracteres</p>
@@ -59,7 +59,7 @@
             <div class="col-sm-6">
               <div class="formulario__grupo" id="grupo__password2">
               <label for="password2" class="form-label">Repetir contraseña</label>
-              <input type="password" class="form-control" id="password2">
+              <input type="password" class="form-control" id="password2" required>
               <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
             </div>
               <p class ="formulario__input-error">Debe ser igual a "contraseña</p> 
