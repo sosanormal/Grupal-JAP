@@ -24,7 +24,7 @@
               <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="nombre" required>
               <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
-              <p class ="formulario__input-error">Debe ingresar un nombre</p>
+              <p class ="invalid-feedback">Debe ingresar un nombre</p>
             </div>
             
 
@@ -33,9 +33,10 @@
               <label for="apellido" class="form-label">Apellido</label>
               <input type="text" class="form-control" id="apellido" required>
               <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
+              <p class ="invalid-feedback">Debe ingresar un apellido</p>
             </div>
-              <p class ="formulario__input-error">Debe ingresar un apellido</p>
-            </div>
+              
+          </div>
             
 
             <div class="col-12">
@@ -43,38 +44,42 @@
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" required>
               <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
+              <p class ="invalid-feedback">Debe ingresar un email</p>
               </div>
-              <p class ="formulario__input-error">Debe ingresar un email</p>
-            </div>
+              
+          </div>
 
             <div class="col-sm-6">
               <div class="formulario__grupo" id="grupo__password1">
-              <label for="password1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password1" required>
+              <label for="password1" class="form-label" name="password" type="password">Contraseña</label>
+              <input type="password" minlength="6" class="form-control" id="password1"  onchange="onChange()" required>
               <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
+              <p class ="invalid-feedback">Debe ingresar una contraseña con al menos 6 caracteres</p>
             </div>
-              <p class ="formulario__input-error">Debe ingresar una contraseña con al menos 6 caracteres</p>
-            </div>
+              
+          </div>
 
             <div class="col-sm-6">
               <div class="formulario__grupo" id="grupo__password2">
-              <label for="password2" class="form-label">Repetir contraseña</label>
-              <input type="password" class="form-control" id="password2" required>
+              <label for="password2" class="form-label" name="password" type="password">Repetir contraseña</label>
+              <input type="password" minlength="6" class="form-control" id="password2"  onchange="onChange()" required>
               <i class="formulario__ validacion-estado fa-regular fa-circle-exclamation"></i>
+              <p id="invalidPassword" style="color:red"></p> 
             </div>
-              <p class ="formulario__input-error">Debe ser igual a "contraseña</p> 
-            </div>
+              
+          </div>
 
             <div class="col-sm-12">
               <div class="formulario__grupo" id="grupo__terminos"></div>
               <button type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
                 data-bs-target="#modalTerminos" id="terminos">Términos del servicio</button>
+                <p id="termsNotChecked" style="color:red"></p>
               </div>
-              <p class ="formulario__input-error">Debe aceptar los términos del servicio</p>
+              
             </div>
 
             <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <button class="btn btn-primary" type="submit">Registrarme</button>
+            <button type="submit" class="btn btn-primary" onclick="validacion()">Registrarme</button>
           </div>
 
           </div>
@@ -105,8 +110,9 @@
         </div>
         <div class="modal-footer">
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="terminos">
+            <input type="checkbox" class="form-check-input" name="terminos" id="checkbox" form="formulario" required onclick="checkCheckbox()">
             <label class="form-check-label" for="terminos">Acepto los términos y condiciones del servicio.</label>
+            <p id="termsNotChecked2" style="color:red"></p>
           </div>
         </div>
       </div>
